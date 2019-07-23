@@ -12,7 +12,7 @@ A list of cuisine-labelled recipes is stored in a dataframe (39,774 rows). Ingre
 
 ###
 <p align="center">
-<img width="450" height="180" src="images/data_table.png">
+<img width="500" height="180" src="images/data_table.png">
 </p>
 
 ## EDA
@@ -33,7 +33,7 @@ Texts in the ingredients column were first tokenized using comma seperations wit
 ## Models
 Logistic regression and random forest classifier were used as modelling techniques for classifying each recipe to a cuisine. The dataset was split into train and test datasets. Cross-validation and resampling of the minority classes using SMOTE were implemented.
 
-## Evaluation of Model
+## Evaluation of Models
 To evaluate how well our models performed, confusion matrices, accuracies and F1-scores were compated. Results of logistic regression and random forest were similar. Overall, it appears we are able to classify recipes as one of twenty cuisines with an accuracy up to around 70%. 
 
 
