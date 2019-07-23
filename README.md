@@ -8,7 +8,7 @@ As a member of the data team at an online publishing company, one of my vertical
 
 ## Data
 
-A list of cuisine-labelled recipes is stored in a dataframe (39774 rows). Ingredients for each recipe are provided as strings. A total of 20 different cuisines are present 
+A list of cuisine-labelled recipes is stored in a dataframe (39,774 rows). Ingredients for each recipe are provided as strings and a total of 20 unique cuisines are present:
 
 ###
 <p align="center">
@@ -16,7 +16,7 @@ A list of cuisine-labelled recipes is stored in a dataframe (39774 rows). Ingred
 </p>
 
 ## EDA
-Exploratory data analysis was performed. Figure below represent how many ingredients each of the 20 cuisine typically contains. 
+Exploratory data analysis was performed before any pre-processing was done. Figure below represents how many ingredients each of the 20 cuisine typically contains. 
 
 <p align="center">
 <img src="images/EDA_BP.png">
@@ -24,14 +24,14 @@ Exploratory data analysis was performed. Figure below represent how many ingredi
 
 
 ## Pre-processing and TF-IDF
-Texts of the 
+Texts in the ingredients column were first tokenized using comma seperations before removing any characters that are not alphabets. Subsequently, lemmatization was performed on the texts before texts were converted to a matrix of TF-IDF features for modelling.
 
 ## Models
-Logistic regression and random forest classifier were used as modelling techniques for classify each recipe to 
+Logistic regression and random forest classifier were used as modelling techniques for classifying each recipe to a cuisine. The dataset was split into train and test datasets. Cross-validation 
 
 
 ## Evaluation of Model
-To evaluate how well our model performs, confusion matrices, accuracy and F1-scores were computed. Overall, it appears we are able to classify recipes as one of twenty cuisines with an accuracy up to . Furthurmore, it allows us to implement querying by cuisine
+To evaluate how well our models performed, confusion matrices, accuracies and F1-scores were compated. Results of logistic regression and random forest were similar. Overall, it appears we are able to classify recipes as one of twenty cuisines with an accuracy up to around 70%. 
 
 
 <p align="center">
